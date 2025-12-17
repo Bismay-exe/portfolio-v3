@@ -19,8 +19,13 @@ export default function App() {
 
   return (
     <main className="bg-white w-full min-h-screen">
+      <Preloader onComplete={() => { }} />
+        <Header />
+        <Hero />
+        <FeaturedWork />
+        <Thinking />
+        <SkillStack />
         <Experiments />
-        <Contact />
     </main>
   );
 }
