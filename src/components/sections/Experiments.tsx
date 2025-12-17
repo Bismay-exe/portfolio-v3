@@ -7,108 +7,109 @@ const EXPERIMENTS = [
         id: "001",
         name: "Liquid Metal",
         type: "WebGL Shader",
-        img: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=1600",
+        img: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600",
         x: -25, y: -15
     },
     {
         id: "002",
         name: "Cloth Sim",
         type: "Physics Engine",
-        img: "https://images.unsplash.com/photo-1520975922284-9f3b3e47a6c6?q=80&w=1600",
+        img: "https://images.unsplash.com/photo-1545235617-9465d2a55698?q=80&w=1600",
         x: 30, y: 10
     },
     {
         id: "003",
         name: "Raymarcher",
         type: "SDF Geometry",
-        img: "https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?q=80&w=1600",
+        img: "https://images.unsplash.com/photo-1527430253228-e93688616381?q=80&w=1600",
         x: -15, y: 30
     },
     {
         id: "004",
         name: "Audio Viz",
         type: "Frequency Data",
-        img: "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1600",
+        img: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1600",
         x: 20, y: -25
     },
     {
         id: "005",
         name: "Particles",
         type: "Instanced Mesh",
-        img: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600",
+        img: "https://images.unsplash.com/photo-1516117172878-fd2c41f4a759?q=80&w=1600",
         x: -35, y: 5
     },
     {
         id: "006",
         name: "Voronoi",
         type: "Cellular Noise",
-        img: "https://images.unsplash.com/photo-1552083375-1447ce886485?q=80&w=1600",
+        img: "https://images.unsplash.com/photo-1495567720989-cebdbdd97913?q=80&w=1600",
         x: 35, y: 20
     },
     {
         id: "007",
         name: "Glitch Pass",
         type: "Post-Processing",
-        img: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=1600",
+        img: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1600",
         x: 0, y: -35
     },
     {
         id: "008",
         name: "Fluid Grid",
         type: "Flow Fields",
-        img: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=1600",
+        img: "https://images.unsplash.com/photo-1517697471339-4aa32003c11a?q=80&w=1600",
         x: -25, y: 25
     },
     {
         id: "009",
         name: "Reaction Diffusion",
         type: "Compute Shader",
-        img: "https://images.unsplash.com/photo-1604871000636-074fa5117945?q=80&w=1600",
+        img: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600",
         x: 25, y: -10
     },
     {
         id: "010",
         name: "Iso Surface",
         type: "Marching Cubes",
-        img: "https://images.unsplash.com/photo-1618172193763-c511deb635ca?q=80&w=1600",
+        img: "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1600",
         x: -10, y: -20
     },
     {
         id: "011",
         name: "Soft Body",
         type: "Verlet Integration",
-        img: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600",
+        img: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1600",
         x: 15, y: 35
     },
     {
         id: "012",
         name: "Attractors",
         type: "Chaos Theory",
-        img: "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1600",
+        img: "https://images.unsplash.com/photo-1500534623283-312aade485b7?q=80&w=1600",
         x: -30, y: 0
     },
     {
         id: "013",
         name: "Neural Net",
         type: "TensorFlow.js",
-        img: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1600",
+        img: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1600",
         x: 20, y: 20
     },
     {
         id: "014",
         name: "Pixel Sort",
         type: "Algorithmic Art",
-        img: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1600",
+        img: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1600",
         x: -20, y: -30
     },
     {
         id: "015",
         name: "Volumetrics",
         type: "Cloud Shader",
-        img: "https://images.unsplash.com/photo-1536514072410-08db4163c305?q=80&w=1600",
+        img: "https://images.unsplash.com/photo-1499346030926-9a72daac6c63?q=80&w=1600",
         x: 30, y: -5
     }
 ];
+
 
 
 
@@ -141,7 +142,7 @@ export default function Experiments() {
                         zIndex: i
                     },
                     {
-                        scale: 4,     // Explode past viewer
+                        scale: 2,     // Explode past viewer
                         opacity: 1,   // Fade in then out handled below
                         duration: 2,
                         ease: "power1.in", // Accel as it gets closer
@@ -154,7 +155,7 @@ export default function Experiments() {
             });
 
             // Rotate the crosshair based on scroll
-            tl.to(".center-cross", { rotate: 360, duration: 5, ease: "none" }, 0);
+            tl.to(".center-cross", { rotate: 360, duration: 9, ease: "none" }, 0);
         },
     });
 
@@ -164,6 +165,7 @@ export default function Experiments() {
 
     return (
         <section
+            id="experiments"
             ref={container}
             className="relative w-full h-screen bg-[#050505] text-[#EAEAEA] overflow-hidden flex items-center justify-center perspective-1000"
         >
@@ -217,7 +219,7 @@ export default function Experiments() {
                             <div className="w-full h-full overflow-hidden relative grayscale">
                                 <img src={exp.img} alt={exp.name} className="w-full h-full object-cover" />
                                 {/* Overlay Scanlines */}
-                                <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.2)_1px,transparent_1px)] bg-size-[100%_4px]" />
+                                <div className="absolute inset-0 bg-size-[100%_4px]" />
                             </div>
 
                             {/* Label (Attached to the card) */}

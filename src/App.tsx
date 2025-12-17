@@ -1,20 +1,14 @@
-"use client";
+"use client"
 
-
-import useIsomorphicLayoutEffect from "./hooks/useIsomorphicLayoutEffect";
-
-
-
+import { useIsomorphicLayoutEffect } from "framer-motion";
+import Header from "./components/layout/Header";
+import Preloader from "./components/layout/Preloader";
 import Contact from "./components/sections/Contact";
 import Experiments from "./components/sections/Experiments";
-
-import Hero from "./components/sections/Hero";
-import Header from "./components/layout/Header";
-import Thinking from "./components/sections/Thinking";
-import SkillStack from "./components/sections/SkillStack";
 import FeaturedWork from "./components/sections/FeaturedWork";
-
-
+import Hero from "./components/sections/Hero";
+import SkillStack from "./components/sections/SkillStack";
+import Thinking from "./components/sections/Thinking";
 
 export default function App() {
 
@@ -25,13 +19,8 @@ export default function App() {
 
   return (
     <main className="bg-white w-full min-h-screen">
-      <Header />
-      <Hero />
-      <FeaturedWork />
-      <Thinking />
-      <SkillStack />
-      <Experiments />
-      <Contact />
+        <Experiments />
+        <Contact />
     </main>
   );
 }
