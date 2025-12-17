@@ -26,6 +26,7 @@ export default function App() {
         <Thinking />
         <SkillStack />
         <Experiments />
+        <Contact />
     </main>
   );
 }
