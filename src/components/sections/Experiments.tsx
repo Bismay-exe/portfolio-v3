@@ -173,7 +173,7 @@ export default function Experiments() {
             {/* === THE STATIC HUD LAYER (Stays on top) === */}
             <div className="absolute inset-0 pointer-events-none z-50 flex flex-col justify-between p-6 md:p-12 mix-blend-difference">
                 {/* Header */}
-                <div className="flex justify-between items-start border-t border-white/20 pt-4">
+                <div className="flex justify-between items-start md:border-t border-white/20 mt-6 pt-4">
                     <span className="font-mono text-xs uppercase tracking-widest text-gray-400">
                         ( Archive )
                     </span>

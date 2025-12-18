@@ -129,11 +129,7 @@ export default function SkillStack() {
             className="relative w-full h-screen bg-[#111] text-black overflow-hidden"
         >
             {/* GLOBAL PROGRESS INDICATOR */}
-            <div className="fixed top-0 left-0 w-screen h-screen p-13 z-50 hidden md:flex justify-between items-center mix-blend-difference text-white">
-            
-                <span className="font-mono text-xs uppercase tracking-widest vertical-text">
-                    TechStack
-                </span>
+            <div className="fixed top-0 left-0 w-screen h-screen p-13 z-50 hidden md:flex justify-end items-center mix-blend-difference text-white">
 
                 {/* Progress Track */}
                 <div className="relative w-1 h-32 rounded-full bg-white/20 overflow-hidden">
@@ -161,13 +157,12 @@ export default function SkillStack() {
                     >
                         {/* SWISS GRID LINES ON CARD */}
                         <div className="absolute inset-0 pointer-events-none">
-                            <div className="w-full h-px bg-black/10 absolute top-22 left-0" />
                             <div className="w-full h-px bg-black/10 absolute bottom-12 left-0" />
                             <div className="w-px h-full bg-black/10 absolute left-1/2 top-0 hidden md:block" />
                         </div>
 
                         {/* CARD CONTENT */}
-                        <div className="relative z-10 w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                        <div className="relative z-10 w-full md:px-14 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
                             {/* Left: Giant Typography */}
                             <div className="flex flex-col justify-center">
