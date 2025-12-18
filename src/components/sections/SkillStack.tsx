@@ -129,7 +129,7 @@ export default function SkillStack() {
             className="relative w-full h-screen bg-[#111] text-black overflow-hidden"
         >
             {/* GLOBAL PROGRESS INDICATOR */}
-            <div className="fixed top-0 left-0 w-screen h-screen p-13 z-50 hidden md:flex justify-end items-center mix-blend-difference text-white">
+            <div className="fixed top-0 left-0 w-screen h-screen p-13 z-50 hidden md:flex justify-end items-center mix-blend-difference text-white pointer-events-none">
 
                 {/* Progress Track */}
                 <div className="relative w-1 h-32 rounded-full bg-white/20 overflow-hidden">
